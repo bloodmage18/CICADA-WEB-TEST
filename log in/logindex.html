@@ -1,0 +1,72 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width = device-width , initial-scale =1.0 ">
+            <title>Clover Insttute of Creative Art Design Application </title>
+            <link rel="stylesheet" href="style.css">
+
+        <body>
+            <section class="showcase " >
+                <header>
+                    <a href="../Home_page/Home_page.html" class="logo">
+                        <img src="cicada.png" alt="" style="width:200px;height:100px;">
+                    </a>
+                    <div class="toggle "></div>
+                </header>
+
+            <div class="loginbox">
+
+                <h1> login </h1>
+                <div class="textbox">
+                    <input type="text" placeholder="username" name="" value="">
+                </div>
+                <div class="text box">
+                    <input type="password" placeholder="password" name="" value="">
+                </div>
+                <button >log in</button>
+
+            </div>     
+
+            <video src="river.mp4"muted loop autoplay></video>
+           
+
+            </section>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../sign up/signindex.html">Sign up</a></li>
+                    <li><a href="../Home_page.html">Home</a></li>
+                    
+                </ul>
+
+            </div>
+
+
+            <ul class ="social">
+                    <li><a href="#"><img src = "facebook.png" alt = ""></a></li>
+                    <li><a href="#"><img src = "instagram.png" alt = ""></a></li>
+                    <li><a href="#"><img src = "twitter.png" alt = ""></a></li>
+            </ul>
+           
+            
+            <div class="cicada">
+                <img src = "cicada.png"></img>
+            </div>
+
+
+            <script>
+                const menutoggle = document.querySelector('.toggle')
+                const showcase = document.querySelector('.showcase')
+
+                menutoggle.addEventListener('click' , () => {
+                    menutoggle.classList.toggle('active')
+                    showcase.classList.toggle('active')
+                } )
+            </script>
+
+
+        </body>
+
+    </html>

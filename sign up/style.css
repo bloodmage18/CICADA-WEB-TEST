@@ -1,0 +1,226 @@
+*
+{
+    box-sizing : border-box ;
+    margin : 0 ;
+    padding : 0 ;
+    font-family : 'Times New Roman', Times, serif ;
+}
+.showcase
+{
+    position: absolute;
+    right : 0 ;
+    width : 100% ;
+    min-height: 100vh ;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background : #111 ;
+    z-index: 2;
+    transition: 0.8s;
+}
+
+.showcase.active
+{
+    right: 300px;
+}
+
+.showcase header 
+{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.showcase video
+{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 2;
+}
+
+
+.signinbox{
+    width: 280px;
+    position: absolute;
+    z-index:10 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 6px;
+}
+.signinbox h1{
+    font-family: fantasy;
+    float: center ;
+    font-size: 80px;
+    color : rgb(115, 250, 176) ;
+    font-weight: 500;
+    text-transform : uppercase ;
+    transition: 0.8s;
+}
+.signinbox h1:hover
+{
+    color: #FF5349;
+    transform : scale(1.2) translateY(-25px)
+}
+
+.signinbox input[type = "text"],.signinbox input[type = "password"],.signinbox input[type = "password2"]
+{
+    border : 0 ;
+    background: none;
+    display: block;
+    margin : 20px auto ;
+    text-align: center;
+    border : 2px solid lightskyblue ;
+    padding: 14px 10px ; 
+    width : 200px ;
+    outline: none;
+    color: 3px solid aliceblue;
+    border-radius: 24px ;
+    transition: 0.85s;
+}
+.signinbox input[type = "text"]:focus ,.signinbox input[type = "password"]:focus,.signinbox input[type = "password2"]:focus 
+{
+    transition : 0.50s ;
+    width : 250px ;
+    border-color: #e2d139;
+
+}
+
+.signinbox input[type = "text"]:hover,.signinbox input[type = "password"]:hover,.signinbox input[type = "password2"]:hover
+{
+    width : 250px ;
+    border-color: #2ecc72;
+
+}
+
+button
+{
+    border : 0 ;
+    initial-value: absolute;
+    background: none;
+    display: block;
+    margin : 20px auto ;
+    text-align: center;
+    border : 2px solid #2ecc72 ;
+    padding: 14px 40px ; 
+    outline: none;
+    color: white;
+    border-radius: 24px ;
+    cursor: pointer;
+}
+button:hover
+{
+    background : #2ecc72 ;
+    text-emphasis-color: coral;
+}
+
+.toggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.toggle.active
+{
+    background : url('close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+
+.menu
+{
+    position : absolute;
+    background :rgba(27, 30, 43, 0.651);
+    top : 0;
+    right : 0;
+    width: 300px;
+    height: 100%;
+    display : flex;
+    align-items: center ;
+    justify-content:center;
+    z-index: 1;
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: #111;
+}
+
+.menu ul li a:hover
+{
+    color : #e95d33;
+}
+
+.social
+{
+    position: absolute;
+    top: 50%;
+    right : -56%;
+    display: flex;
+    z-index: 1 ;
+    justify-content:space-between;
+    align-items: center;
+    transform: scale(0.1);
+
+}
+
+.social li
+{
+    margin-right: 50px;
+    margin-left: 50px ;
+    list-style: none;
+}
+
+.social li a 
+{
+   
+    background-size: 25px;
+    display : inline-block;
+    transform : scale(0.8);
+    transition: 0.8s;
+}
+
+.social li a:hover
+{
+    color : rgb(54,78, 176);
+    transform : scale(1.1) translateY(24px) ;
+
+}
+
+
+.cicada
+{
+    top: -240px;
+    left: 39%;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.2);
+}
